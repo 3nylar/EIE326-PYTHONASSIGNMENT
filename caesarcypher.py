@@ -9,7 +9,7 @@ def caesar_cipher(text, shift):
             shifted = (ord(char) - start + shift) % 26 + start
             encrypted += chr(shifted)
         else:
-            encrypted += char  # Non-letters remain the same
+            encrypted += char  
     return encrypted
 
 message = input("Enter the message: ")
